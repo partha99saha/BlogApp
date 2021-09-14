@@ -4,6 +4,10 @@ declare(strict_types=1);
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\CategoriesController;
+use App\Model\Table\ArticlesTable;
+use App\Model\Table\UsersTable;
+use App\Model\Table\CategoriesTable;
+use App\Test\Fixture\CategoriesFixture;
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
 
@@ -24,7 +28,32 @@ class CategoriesControllerTest extends TestCase
     protected $fixtures = [
         'app.Categories',
         'app.Articles',
+        'app.Users',
     ];
+
+    /**
+     * setUp method
+     *
+     * @return void
+     */
+    public function setUp(): void
+    {
+        parent::setUp();
+        $config = $this->getTableLocator()->exists('Users') ? [] : ['className' => CategoriesTable::class];
+        $articles = $this->getTableLocator()->get('Categories', $config);
+        //$categories =$this->categories;
+
+    }
+    /**
+     * tearDown method
+     *
+     * @return void
+     */
+    public function tearDown(): void
+    {
+        unset($this->Categories);
+        parent::tearDown();
+    }
 
     /**
      * Test index method
@@ -34,7 +63,8 @@ class CategoriesControllerTest extends TestCase
      */
     public function testIndex(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/');
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -45,7 +75,8 @@ class CategoriesControllerTest extends TestCase
      */
     public function testView(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/articles/'.CategoriesFixture::ID);
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -56,7 +87,12 @@ class CategoriesControllerTest extends TestCase
      */
     public function testAdd(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->post('/Categories/add/',[
+            'id' => CategoriesFixture::ID,
+            'name' => null,
+            'description' => null,
+        ]);
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -67,7 +103,12 @@ class CategoriesControllerTest extends TestCase
      */
     public function testEdit(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->post('/categories/edit/',[
+            'id' => CategoriesFixture::ID,
+            'name' => 'Lorem ipsum dolor sit amet',
+            'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat.',
+        ]);
+        $this->assertResponseSuccess();
     }
 
     /**
@@ -78,6 +119,9 @@ class CategoriesControllerTest extends TestCase
      */
     public function testDelete(): void
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->post('/categories/delete/',[
+            'id' => CategoriesFixture::ID,
+        ]);
+        $this->assertResponseSuccess();
     }
 }

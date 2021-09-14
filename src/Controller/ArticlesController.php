@@ -45,7 +45,6 @@ class ArticlesController extends AppController
     {
         $article = $this->Articles->get($id);
         $this->Authorization->skipAuthorization();
-       // $this->set(compact('article'));
         $article = $this->Articles->get($id, [
             'contain' => ['Categories'],
         ]);
@@ -96,9 +95,8 @@ class ArticlesController extends AppController
             ]);
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('The article has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
             }
+           // $this->response = $this->response->withStatus(400);
             $this->Flash->error(__('The article could not be saved. Please, try again.'));
         }
         $categories = $this->Articles->Categories->find('list', ['limit' => 200]);

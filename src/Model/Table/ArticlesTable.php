@@ -39,7 +39,6 @@ class ArticlesTable extends Table
      */
     public function initialize(array $config): void
     {
-
         parent::initialize($config);
 
         $this->setTable('articles');
@@ -54,6 +53,7 @@ class ArticlesTable extends Table
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
         ]);
+
     }
 
     /**

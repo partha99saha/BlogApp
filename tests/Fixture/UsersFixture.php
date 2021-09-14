@@ -16,6 +16,7 @@ class UsersFixture extends TestFixture
      * @var array
      */
     // phpcs:disable
+    const ID ='bf9ad2fc-a4a6-4b6e-9c52-33575a2120a0';
     public $fields = [
         'id' => ['type' => 'uuid', 'length' => null, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null],
         'first_name' => ['type' => 'string', 'length' => null, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null],
@@ -40,11 +41,11 @@ class UsersFixture extends TestFixture
     {
         $this->records = [
             [
-                'id' => 'bf9ad2fc-a4a6-4b6e-9c52-33575a2120a0',
-                'first_name' => 'Lorem ipsum dolor sit amet',
-                'last_name' => 'Lorem ipsum dolor sit amet',
-                'email' => 'Lorem ipsum dolor sit amet',
-                'password' => 'Lorem ipsum dolor sit amet',
+                'id' => self::ID,
+                'first_name' => 'ab',
+                'last_name' => 'cd',
+                'email' => 'abc@gmail.com',
+                'password' => '123',
                 'role_id' => 'dac07add-3b64-4baf-ba32-5fa8d3d32304',
                 'created' => 1630937936,
                 'modified' => 1630937936,

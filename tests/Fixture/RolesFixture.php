@@ -10,6 +10,7 @@ use Cake\TestSuite\Fixture\TestFixture;
  */
 class RolesFixture extends TestFixture
 {
+    const ID = '75e0c963-f161-40fb-b65d-fc10d6989a22';
     /**
      * Fields
      *
@@ -38,8 +39,8 @@ class RolesFixture extends TestFixture
     {
         $this->records = [
             [
-                'id' => '75e0c963-f161-40fb-b65d-fc10d6989a22',
-                'code' => 'Lorem ipsum dolor sit amet',
+                'id' => self::ID,
+                'code' => '1',
                 'title' => 'Lorem ipsum dolor sit amet',
                 'description' => 'Lorem ipsum dolor sit amet',
                 'created' => 1630994028,

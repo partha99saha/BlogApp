@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c6a1ad5276ede45a83622bbfa27bef3",
+    "content-hash": "163ad216191076ef887ff6de758b87a9",
     "packages": [
         {
             "name": "cakephp/authentication",
@@ -6175,6 +6175,103 @@
                 }
             ],
             "time": "2021-05-16T12:14:13+00:00"
+        },
+        {
+            "name": "vierge-noire/cakephp-test-migrator",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vierge-noire/cakephp-test-migrator.git",
+                "reference": "ede0b4671da55ec044e7951740c584cbb9455c21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vierge-noire/cakephp-test-migrator/zipball/ede0b4671da55ec044e7951740c584cbb9455c21",
+                "reference": "ede0b4671da55ec044e7951740c584cbb9455c21",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/migrations": "^3.0",
+                "vierge-noire/cakephp-test-suite-light": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CakephpTestMigrator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Juan Pablo Ramirez",
+                    "email": "pabloelcolombiano@gmail.com"
+                }
+            ],
+            "description": "Migration helper for the CakePHP Test Suite Light",
+            "support": {
+                "issues": "https://github.com/vierge-noire/cakephp-test-migrator/issues",
+                "source": "https://github.com/vierge-noire/cakephp-test-migrator/tree/v2.0"
+            },
+            "time": "2020-10-05T16:43:59+00:00"
+        },
+        {
+            "name": "vierge-noire/cakephp-test-suite-light",
+            "version": "2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vierge-noire/cakephp-test-suite-light.git",
+                "reference": "3f7203829c4193be04d344451fabbeabbb3badd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vierge-noire/cakephp-test-suite-light/zipball/3f7203829c4193be04d344451fabbeabbb3badd9",
+                "reference": "3f7203829c4193be04d344451fabbeabbb3badd9",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^4.0",
+                "ext-pdo": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "cakephp/migrations": "^3.0",
+                "josegonzalez/dotenv": "dev-master",
+                "phpstan/phpstan": "^0.12.48@dev",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CakephpTestSuiteLight\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Masson",
+                    "email": "nicolas@b-projects.tech"
+                },
+                {
+                    "name": "Juan Pablo Ramìrez",
+                    "email": "pabloelcolombiano@gmail.com"
+                }
+            ],
+            "description": "A test suite for CakePHP application based on Sql queries",
+            "keywords": [
+                "cakephp",
+                "test"
+            ],
+            "support": {
+                "issues": "https://github.com/vierge-noire/cakephp-test-suite-light/issues",
+                "source": "https://github.com/vierge-noire/cakephp-test-suite-light/tree/2.1.5"
+            },
+            "time": "2021-02-14T22:08:04+00:00"
         },
         {
             "name": "webmozart/assert",

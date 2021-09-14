@@ -66,7 +66,7 @@ class CategoriesTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-            ->uuid('id')
+            ->integer('id')
             ->allowEmptyString('id', null, 'create');
 
         $validator

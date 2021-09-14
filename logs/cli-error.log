@@ -1,0 +1,439 @@
+2021-09-03 11:25:09 Error: [PDOException] SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "articles_pkey"
+DETAIL:  Key (id)=(1) already exists. in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\ArticlesSeed.php:38
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-06 12:27:55 Error: [InvalidArgumentException] Could not find class "CreateUsers" in file "D:\cakephp\blog\config\Migrations\20210906121351_CreateUsers.php" in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 744
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:429
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php:123
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Rollback.php:81
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 04:52:19 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: "1" in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\ArticlesSeed.php:38
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 04:54:46 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: "1" in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\ArticlesSeed.php:38
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 04:55:09 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: "1" in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\ArticlesSeed.php:38
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:04:57 Error: [PDOException] SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "1630991097"
+HINT:  Perhaps you need a different "datestyle" setting. in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:41
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:54:57 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "public.categories" does not exist in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 192
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:192
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PostgresAdapter.php:383
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:460
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:196
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:460
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:669
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:41
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:58:47 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column "name" of relation "roles" does not exist
+LINE 1: INSERT INTO "public"."roles" ("id", "name", "description", "...
+                                            ^ in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:42
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:59:11 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column "name" of relation "roles" does not exist
+LINE 1: INSERT INTO "public"."roles" ("id", "name", "description", "...
+                                            ^ in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:42
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:59:49 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "code" of relation "roles" violates not-null constraint
+DETAIL:  Failing row contains (61f7bbe8-1605-42b1-bb7e-bf6c4e175218, null, Admin, Administrator, 2021-07-09 05:59:00, 2021-07-09 05:59:00). in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 262
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:262
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:172
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:91
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:172
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:655
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:42
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-07 05:59:59 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "code" of relation "roles" violates not-null constraint
+DETAIL:  Failing row contains (025b3206-422a-4df0-9354-d5d7cd5d38f3, null, Admin, Administrator, 2021-07-09 05:59:00, 2021-07-09 05:59:00). in D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 334
+Stack Trace:
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:334
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php:102
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:180
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:652
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:624
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:682
+- D:\cakephp\blog\config\Seeds\RolesSeed.php:42
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php:146
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:405
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php:545
+- D:\cakephp\blog\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php:102
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\Phinx\Seed.php:76
+- D:\cakephp\blog\vendor\symfony\console\Command\Command.php:299
+- D:\cakephp\blog\vendor\symfony\console\Application.php:978
+- D:\cakephp\blog\vendor\symfony\console\Application.php:295
+- D:\cakephp\blog\vendor\symfony\console\Application.php:167
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- D:\cakephp\blog\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- D:\cakephp\blog\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\cakephp\blog\bin\cake.php:12
+
+
+
+2021-09-13 09:25:18 Warning: Warning (2): Undefined property: App\Test\TestCase\Model\Table\UsersTableTest::$Roles in [D:\cakephp\blog\tests\TestCase\Model\Table\UsersTableTest.php, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Model\Table\UsersTableTest::testInitialize() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 62
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1527
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1133
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-13 09:25:42 Warning: Warning (2): Undefined property: App\Test\TestCase\Model\Table\UsersTableTest::$Roles in [D:\cakephp\blog\tests\TestCase\Model\Table\UsersTableTest.php, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Model\Table\UsersTableTest::testInitialize() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 62
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1527
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1133
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-13 09:26:14 Warning: Warning (2): Undefined property: App\Test\TestCase\Model\Table\UsersTableTest::$Roles in [D:\cakephp\blog\tests\TestCase\Model\Table\UsersTableTest.php, line 63]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Model\Table\UsersTableTest::testInitialize() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 63
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1527
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1133
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 09:42:01 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::setUp() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 44
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1126
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 09:42:01 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::setUp() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 44
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1126
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 09:42:01 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::setUp() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 44
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1126
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 09:42:01 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::setUp() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 44
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1126
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 09:42:01 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::setUp() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 44
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1126
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+

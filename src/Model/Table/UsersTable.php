@@ -101,6 +101,7 @@ class UsersTable extends Table
             ]);
     }
 
+
     /**
      * Returns a rules checker object that will be used for validating
      * application integrity.
