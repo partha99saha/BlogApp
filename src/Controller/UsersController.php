@@ -4,15 +4,30 @@ namespace App\Controller;
 use App\Controller\AppController;
 use App\Model\Table\UsersTable;
 use Cake\Event\EventInterface;
+use Authentication\Controller\Component\AuthenticationComponent;
 
 /**
  * @property UsersTable $Users
+ * @var \App\Model\Entity\User[]|\Cake\Collection\CollectionInterface $user1
+ * @method \App\Model\Entity\User[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ * @property AuthenticationComponent $Authentication
  */
 class UsersController extends AppController
 {
+    /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|null|void Renders view
+     */
     public function index()
     {
-        $this->set('users', $this->Users->find()->all());
+        $users = $this->paginate($this->Users);
+        $user = $this->request->getAttribute('identity')->getIdentifier();
+        $user1 = $this->request->getAttribute('identity');
+        $this->Authorization->skipAuthorization();
+        $this->set(compact('user','users','user1'));
+
+       // $this->set('users', $this->Users->find()->all());
     }
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
@@ -68,5 +83,17 @@ class UsersController extends AppController
                 'controller' => 'Users',
                 'action' => 'login']);
         }
+    }
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $user = $this->Users->get($id);
+        if ($this->Users->delete($user)) {
+            $this->Flash->success(__('The User has been deleted.'));
+        } else {
+            $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+        }
+
+        return $this->redirect(['action' => 'index']);
     }
 }

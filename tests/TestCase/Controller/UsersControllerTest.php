@@ -1,16 +1,10 @@
 <?php
-
 namespace App\Test\TestCase\Controller;
-
-use App\Model\Table\UsersTable;
 use App\Test\Fixture\UsersFixture;
 use App\Model\Table\ArticlesTable;
-use App\Model\Table\CategoriesTable;
-use App\Model\Table\RolesTable;
-use App\Controller\UsersController;
+use App\Model\Table\UsersTable;
 use Cake\TestSuite\IntegrationTestTrait;
 
-use Cake\TestSuite\TestCase;
 /**
  * @property UsersTable $Users
  */
@@ -18,25 +12,20 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
 {
     use IntegrationTestTrait;
 
-//    protected function _getLogin()
-//    {
-//        $identity = $this->Users->get(UsersFixture::ID);
-//        $this->session([
-//            'Auth' => $identity,
-//        ]);
-//    }
-
-    /**
-     * Fixtures
-     *
-     * @var array
-     */
     protected $fixtures = [
         'app.Users',
         'app.Roles',
-        'app.Categories',
         'app.Articles',
+        'app.Categories'
     ];
+
+    protected function _login()
+    {
+        $identity = $this->Users->get(UsersFixture::ID);
+        $this->session([
+            'Auth' => $identity,
+        ]);
+    }
     /**
      * setUp method
      *
@@ -46,10 +35,10 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
     {
         parent::setUp();
         $config = $this->getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
-        $this->Users = $this->getTableLocator()->get('Users', $config);
+        $users = $this->getTableLocator()->get('Users', $config);
+        $this->Users = $users;
     }
-
-    /**
+ /**
      * tearDown method
      *
      * @return void
@@ -60,6 +49,8 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
 
         parent::tearDown();
     }
+
+
     /**
      * Test index method
      *
@@ -68,30 +59,12 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
      */
     public function testIndex(): void
     {
-//        $this->_getLogin();
-//        $this->enableSecurityToken();
-//        $this->enableCsrfToken();
-        $this->get('/users');
- //       $this->assertResponseOk();
-        $this->assertTrue(true);
+        $this->_login();
+        $this->enableSecurityToken();
+        $this->enableCsrfToken();
+        $this->get('/Users');
+        $this->assertResponseOk();
     }
-
-    /**
-     * Test view method
-     *
-     * @return void
-     * @uses \App\Controller\UsersController::view()
-     */
-    public function testView(): void
-    {
-//        $this->_getLogin();
-//        $this->enableSecurityToken();
-//        $this->enableCsrfToken();
-//        $this->get('/users/view/'.UsersFixture::ID);
- //       $this->assertResponseOk();
-        $this->assertTrue(true);
-    }
-
     /**
      * Test add method
      *
@@ -100,39 +73,21 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
      */
     public function testAdd(): void
     {
-
-        $this->post('/categories/add/',[
-            'id' => UsersFixture::ID,
-            'first_name' => null,
-            'last_name' => null,
-            'email' => null,
-            'password' => null,
-            'role_id' =>null,
-
-        ]);
-        $this->assertResponseSuccess();
+        {
+            $this->enableCsrfToken();
+            $this->_login();
+            $this->enableSecurityToken();
+            $this->post('/users/add/',[
+                'id' => UsersFixture::ID,
+                'first_name' => 'ab',
+                'last_name' => 'cd',
+                'email' => 'abc@gmail.com',
+                'password' => '123',
+                'role_id' => 'dac07add-3b64-4baf-ba32-5fa8d3d32304',
+            ]);
+            $this->assertResponseSuccess();
+        }
     }
-
-    /**
-     * Test edit method
-     *
-     * @return void
-     * @uses \App\Controller\UsersController::edit()
-     */
-    public function testEdit(): void
-    {
-//        $this->post('/categories/edit/',[
-//            'id' => UsersFixture::ID,
-//            'first_name' => 'ab',
-//            'last_name' => 'cd',
-//            'email' => 'abc@gmail.com',
-//            'password' => '123',
-//            'role_id' => 'dac07add-3b64-4baf-ba32-5fa8d3d32304',
-//        ]);
- //       $this->assertResponseSuccess();
-        $this->assertTrue(true);
-    }
-
     /**
      * Test delete method
      *
@@ -141,10 +96,10 @@ class UsersControllerTest extends \Cake\TestSuite\TestCase
      */
     public function testDelete(): void
     {
-//        $this->post('/categories/edit/',[
-//            'id' => UsersFixture::ID,
-//        ]);
-//        $this->assertResponseSuccess();
-        $this->assertTrue(true);
+        $this->enableCsrfToken();
+        $this->post('/users/delete/',[
+            'id' => UsersFixture::ID,
+        ]);
+        $this->assertResponseSuccess();
     }
 }

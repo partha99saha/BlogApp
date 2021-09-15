@@ -31,7 +31,7 @@ class CategoriesController extends AppController
     {
         $categories = $this->paginate($this->Categories);
         $user = $this->request->getAttribute('identity')->getIdentifier();
-        $user1=$this->request->getAttribute('identity');
+        $user1 = $this->request->getAttribute('identity');
         $roles = $this->request->getAttribute('identity')->getIdentifier();
         $this->Authorization->skipAuthorization();
 

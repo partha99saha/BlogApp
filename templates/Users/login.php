@@ -3,51 +3,51 @@
  *  @var \App\View\AppView $this
  */
 $this->disableAutoLayout();
+echo $this->Html->css('style');
+echo $this->Html->css('bootstrap.min');
+
 ?>
-<div class="error-pagewrap" align="center">
+<div class="error-pagewrap">
     <div class="error-page-int">
         <div class="text-center m-b-md custom-login">
-            <table border="1" cellpadding="0" cellspacing="0">
-                <tr><th colspan="2">   <h3>PLEASE LOGIN </h3></th></tr>
+            <h3>PLEASE LOGIN </h3>
         </div>
+        <br><br>
         <div class="content-error">
             <div class="hpanel">
+                <?= $this->Form->create(null,[
+                    'controller'=>'Users',
+                    'action'=>'login',
+                ]) ?>
                 <div class="panel-body">
-                    <?= $this->Flash->render() ?>
-                    <?= $this->Form->create() ?>
-
                     <div class="form-group">
-                        <tr><td>
-                        <?= $this->Form->control('email', [
-                            'required' => true,
-                            'class' => "form-control"
+                        <label class="control-label" for="username">Email</label><?= $this->Form->control('email',[
+                            'label'=>false,
+                            'class'=>'form-control',
+                            'required'=>true,
                         ]) ?>
-
-                        </td></tr>
                     </div>
+                    <br>
                     <div class="form-group">
-                        <tr><td>
-                        <?= $this->Form->control('password', [
-                            'required' => true,
-                            'class' => "form-control"
+                        <label class="control-label" for="password">Password</label>
+                        <?= $this->Form->control('password',[
+                            'label'=>false,
+                            'class'=>'form-control',
                         ]) ?>
-                            </td></tr>
-                        <tr><td align="center">
-                        <?= $this->Form->submit('Sign In',
-                            [
-                                'class' => 'btn btn-primary btn-default btn-block',
-                            ]);
-                        ?>
-                        <?= $this->Form->end() ?>
                     </div>
-                    <?= $this->Html->link("Sign up", [
-                        'action' => 'add',
-                        'class' => 'btn btn-default btn-block'
-                    ]) ?></td></tr>
-                    </form>
-                </table>
+                    <div class="checkbox login-checkbox">
+                        <label>
+                            <input type="checkbox" class="i-checks"> Remember me </label>
+                    </div>
+                        <button class = 'btn btn-success btn-block' type="submit">Login</button>
+
+                    <?= $this->Html->link("New User", ['action' => 'add']) ?>
+                    <?= $this->Form->end() ?>
                 </div>
             </div>
+        </div>
+        <div class="text-center login-footer">
+            <p>Copyright © 2021. All rights reserved. Template by <a href="https://agpaytech.co.uk">AgpayTech</a></p>
         </div>
     </div>
 </div>

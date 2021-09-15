@@ -18,7 +18,9 @@ $cakeDescription = 'CakePHP || BLOG ';
 
 
 
-    <?= $this->Html->css(['bootstrap.min.css',
+
+    <?= $this->Html->css([
+        'bootstrap.min.css',
         'style.css',
         'font-awesome.min.css',
         'owl.carousel.css',
@@ -37,7 +39,8 @@ $cakeDescription = 'CakePHP || BLOG ';
         'responsive.css',
         'style.css'
     ]) ?>
-    <?= $this->Html->script(['vendor/jquery-1.12.4.min.js',
+    <?= $this->Html->script([
+        'vendor/jquery-1.12.4.min.js',
         'bootstrap.min.js',
         'wow.min.js',
         'jquery-price-slider.js',
@@ -60,10 +63,9 @@ $cakeDescription = 'CakePHP || BLOG ';
 
 <nav id="sidebar" class="">
 
-
     <nav class="sidebar-nav left-sidebar-menu-pro">
 
-        <div class="left-custom-menu-adp-wrap comment-scrollbar" align="left">
+        <div class="left-custom-menu-adp-wrap comment-scrollbar" >
 
             <ul class="metismenu" id="menu1">
                 <li>
@@ -74,6 +76,9 @@ $cakeDescription = 'CakePHP || BLOG ';
                     <?= $this->Html->link(__('Articles'), ['controller'=>'Articles','action' => 'index'], ['class'=>'mini-click-non']) ?>
                 </li>
 
+                <li>
+                    <?= $this->Html->link("User Details", ['controller' => 'Users','action' => 'index'],['class'=>"mini-click-non"]) ?>
+                </li>
                 <li>
                     <?= $this->Html->link("Logout", ['controller' => 'Users','action' => 'logout'],['class'=>"mini-click-non"]) ?>
                 </li>
