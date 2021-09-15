@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd56bd83d2d4c023aa3d0941f295afc4d9a220dd6',
+        'reference' => '2d85fff43e6ed51642aebf4ba945ecd8646a6129',
         'name' => 'cakephp/app',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd56bd83d2d4c023aa3d0941f295afc4d9a220dd6',
+            'reference' => '2d85fff43e6ed51642aebf4ba945ecd8646a6129',
             'dev_requirement' => false,
         ),
         'cakephp/authentication' => array(
@@ -58,16 +58,16 @@
         'cakephp/cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/cakephp' => array(
-            'pretty_version' => '4.2.8',
-            'version' => '4.2.8.0',
+            'pretty_version' => '4.2.9',
+            'version' => '4.2.9.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../cakephp/cakephp',
             'aliases' => array(),
-            'reference' => 'f667f708baeaf700bb7f3934fe2cc75c240d77bf',
+            'reference' => '6cb068fd328219d79a02ef6df439b73459071368',
             'dev_requirement' => false,
         ),
         'cakephp/cakephp-codesniffer' => array(
@@ -91,76 +91,76 @@
         'cakephp/collection' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/console' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/core' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/database' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/datasource' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/debug_kit' => array(
-            'pretty_version' => '4.4.3',
-            'version' => '4.4.3.0',
+            'pretty_version' => '4.4.4',
+            'version' => '4.4.4.0',
             'type' => 'cakephp-plugin',
             'install_path' => __DIR__ . '/../cakephp/debug_kit',
             'aliases' => array(),
-            'reference' => 'd8a5552096b09a1cdf192b454ec06dc0157a3515',
+            'reference' => '10d7d9ba36945844211f1d8763e59618917e1784',
             'dev_requirement' => true,
         ),
         'cakephp/event' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/filesystem' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/form' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/http' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/i18n' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/log' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/migrations' => array(
@@ -175,7 +175,7 @@
         'cakephp/orm' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/plugin-installer' => array(
@@ -199,13 +199,13 @@
         'cakephp/utility' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'cakephp/validation' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.2.8',
+                0 => '4.2.9',
             ),
         ),
         'composer/ca-bundle' => array(
@@ -218,12 +218,12 @@
             'dev_requirement' => false,
         ),
         'composer/composer' => array(
-            'pretty_version' => '2.1.6',
-            'version' => '2.1.6.0',
+            'pretty_version' => '2.1.7',
+            'version' => '2.1.7.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/./composer',
             'aliases' => array(),
-            'reference' => 'e5cac5f9d2354d08b67f1d21c664ae70d748c603',
+            'reference' => 'f381e45f0b83a602a315613e08fffe0d8f2288c8',
             'dev_requirement' => true,
         ),
         'composer/metadata-minifier' => array(
@@ -335,12 +335,12 @@
             'dev_requirement' => false,
         ),
         'laminas/laminas-zendframework-bridge' => array(
-            'pretty_version' => '1.3.0',
-            'version' => '1.3.0.0',
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laminas/laminas-zendframework-bridge',
             'aliases' => array(),
-            'reference' => '13af2502d9bb6f7d33be2de4b51fb68c6cdb476e',
+            'reference' => 'bf180a382393e7db5c1e8d0f2ec0c4af9c724baf',
             'dev_requirement' => false,
         ),
         'league/container' => array(
@@ -443,12 +443,12 @@
             'dev_requirement' => true,
         ),
         'phpspec/prophecy' => array(
-            'pretty_version' => '1.13.0',
-            'version' => '1.13.0.0',
+            'pretty_version' => '1.14.0',
+            'version' => '1.14.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpspec/prophecy',
             'aliases' => array(),
-            'reference' => 'be1996ed8adc35c3fd795488a653f4b518be70ea',
+            'reference' => 'd86dfc2e2a3cd366cee475e52c6bb3bbc371aa0e',
             'dev_requirement' => true,
         ),
         'phpstan/phpdoc-parser' => array(

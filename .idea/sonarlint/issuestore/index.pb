@@ -1,3 +1,9 @@
 
 j
 :config/Migrations/20210906140940_CreateCategoriesTable.php,c\a\caba22a9f2e249428dbf48f6196c465b51ab0652
+S
+#tests/Fixture/CategoriesFixture.php,1\1\11128f5923d0674326d0f4e63014198daf8f2aa1
+d
+4tests/TestCase/Controller/ArticlesControllerTest.php,4\e\4e865bfa9901208fef270876f1a634f7b08629ec
+f
+6tests/TestCase/Controller/CategoriesControllerTest.php,6\8\68b72e4e388c5ee76da4b6b950b001cab27ffda6

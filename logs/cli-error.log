@@ -437,3 +437,37 @@ PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.p
 PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
 [main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
 
+2021-09-14 13:38:31 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$Categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 25]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::_getLogin() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 25
+App\Test\TestCase\Controller\CategoriesControllerTest::testIndex() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 73
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1527
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1133
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+
+2021-09-14 13:39:54 Warning: Warning (2): Undefined property: App\Test\TestCase\Controller\CategoriesControllerTest::$Categories in [D:\cakephp\blog\tests\TestCase\Controller\CategoriesControllerTest.php, line 25]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+App\Test\TestCase\Controller\CategoriesControllerTest::_getLogin() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 25
+App\Test\TestCase\Controller\CategoriesControllerTest::testIndex() - ROOT\tests\TestCase\Controller\CategoriesControllerTest.php, line 73
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1527
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1133
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 722
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 885
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 678
+PHPUnit\TextUI\TestRunner::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 670
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 143
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 96
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 92
+

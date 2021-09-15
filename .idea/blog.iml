@@ -85,10 +85,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/bake" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp-codesniffer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/chronos" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/debug_kit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/migrations" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/plugin-installer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/twig-view" />
@@ -99,6 +97,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/authorization" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vierge-noire/cakephp-test-suite-light" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vierge-noire/cakephp-test-migrator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/debug_kit" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -80,10 +80,8 @@
       <path value="$PROJECT_DIR$/vendor/react/promise" />
       <path value="$PROJECT_DIR$/vendor/league/container" />
       <path value="$PROJECT_DIR$/vendor/cakephp/bake" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
       <path value="$PROJECT_DIR$/vendor/cakephp/cakephp-codesniffer" />
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
       <path value="$PROJECT_DIR$/vendor/cakephp/migrations" />
       <path value="$PROJECT_DIR$/vendor/cakephp/plugin-installer" />
       <path value="$PROJECT_DIR$/vendor/cakephp/twig-view" />
@@ -94,6 +92,8 @@
       <path value="$PROJECT_DIR$/vendor/cakephp/authorization" />
       <path value="$PROJECT_DIR$/vendor/vierge-noire/cakephp-test-suite-light" />
       <path value="$PROJECT_DIR$/vendor/vierge-noire/cakephp-test-migrator" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
