@@ -8,6 +8,7 @@ return [
         'Bake' => $baseDir . '/vendor/cakephp/bake/',
         'Cake/TwigView' => $baseDir . '/vendor/cakephp/twig-view/',
         'CakephpTestSuiteLight' => $baseDir . '/vendor/vierge-noire/cakephp-test-suite-light/',
+        'CsvView' => $baseDir . '/vendor/friendsofcake/cakephp-csvview/',
         'DebugKit' => $baseDir . '/vendor/cakephp/debug_kit/',
         'Migrations' => $baseDir . '/vendor/cakephp/migrations/',
     ],

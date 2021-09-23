@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -22,24 +23,22 @@ class UsersController extends AppController
     public function index()
     {
         $users = $this->paginate($this->Users);
-        $user = $this->request->getAttribute('identity')->getIdentifier();
-        $user1 = $this->request->getAttribute('identity');
         $this->Authorization->skipAuthorization();
-        $this->set(compact('user','users','user1'));
-
-       // $this->set('users', $this->Users->find()->all());
+        $this->set(compact('users'));
     }
+
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         parent::beforeFilter($event);
-        $this->Authentication->addUnauthenticatedActions(['login','add']);
+        $this->Authentication->addUnauthenticatedActions(['login', 'add']);
     }
+
     public function add()
     {
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
-            $user->role_id =$this->request->getData('role_id');
+            $user->role_id = $this->request->getData('role_id');
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
                 return $this->redirect(['action' => 'login']);
@@ -67,22 +66,33 @@ class UsersController extends AppController
             $this->Flash->error(__('Invalid username or password'));
         }
     }
-
-    public function view($id)
+   /**
+     * @param string|null $id Users id.
+     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
     {
         $user = $this->Users->get($id);
+        $this->Authorization->skipAuthorization();
         $this->set(compact('user'));
     }
-
-    public function logout()
+    public function edit($id = null)
     {
-        $result = $this->Authentication->getResult();
-        if ($result->isValid()) {
-            $this->Authentication->logout();
-            return $this->redirect([
-                'controller' => 'Users',
-                'action' => 'login']);
+        $user = $this->Users->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData(), [
+                'accessibleFields' => ['id' => false]
+            ]);
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The User has been saved.'));
+            }
+            $this->Flash->error(__('The User could not be saved. Please, try again.'));
+            return $this->redirect(['action' => 'view']);
         }
+        $this->set(compact('user'));
     }
     public function delete($id = null)
     {
@@ -94,6 +104,34 @@ class UsersController extends AppController
             $this->Flash->error(__('The user could not be deleted. Please, try again.'));
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect(['action' => 'logout']);
+    }
+    public function logout()
+    {
+        $result = $this->Authentication->getResult();
+        if ($result->isValid()) {
+            $this->Authentication->logout();
+            return $this->redirect([
+                'controller' => 'Users',
+                'action' => 'login']);
+        }
+    }
+    public function password($id = null)
+    {
+        $user = $this->Users->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData(), [
+                'validate' => 'password'
+            ]);
+            $user->password = $this->request->getData('new_password');
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The Password has been saved.'));
+                return $this->redirect(['action' => 'logout']);
+            }
+            $this->Flash->error(__('The Password could not be saved. Please, try again.'));
+        }
+        $this->set(compact('user'));
     }
 }

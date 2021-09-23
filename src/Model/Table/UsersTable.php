@@ -3,16 +3,16 @@ declare(strict_types=1);
 
 namespace App\Model\Table;
 
+use Authentication\PasswordHasher\DefaultPasswordHasher;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
+use Cake\Utility\Security;
 use Cake\Validation\Validator;
 
 /**
- * Users Model
- *
  * @property \App\Model\Table\RolesTable&\Cake\ORM\Association\BelongsTo $Roles
- *
+ * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsTo $User
  * @method \App\Model\Entity\User newEmptyEntity()
  * @method \App\Model\Entity\User newEntity(array $data, array $options = [])
  * @method \App\Model\Entity\User[] newEntities(array $data, array $options = [])
@@ -32,8 +32,6 @@ use Cake\Validation\Validator;
 class UsersTable extends Table
 {
     /**
-     * Initialize method
-     *
      * @param array $config The configuration for the Table.
      * @return void
      */
@@ -44,9 +42,7 @@ class UsersTable extends Table
         $this->setTable('users');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
-
         $this->addBehavior('Timestamp');
-
         $this->belongsTo('Roles', [
             'foreignKey' => 'role_id',
             'joinType' => 'INNER',
@@ -57,8 +53,6 @@ class UsersTable extends Table
     }
 
     /**
-     * Default validation rules.
-     *
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
@@ -90,7 +84,7 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmptyString('password');
 
-        return $validator
+        $validator
             ->notEmptyString('email', 'An email is required')
             ->email('email')
             ->notEmptyString('password', 'A password is required')
@@ -99,13 +93,11 @@ class UsersTable extends Table
                 'rule' => ['inList', ['admin', 'author']],
                 'message' => 'Please enter a valid role'
             ]);
+        return $validator;
     }
 
 
     /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
@@ -113,7 +105,44 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['email']), ['errorField' => 'email']);
         $rules->add($rules->existsIn(['role_id'], 'Roles'), ['errorField' => 'role_id']);
-
         return $rules;
+    }
+
+    /**
+     * @param \Cake\Validation\Validator $validator Validator instance.
+     * @return \Cake\Validation\Validator
+     */
+    public function validationPassword(Validator $validator): Validator
+    {
+        $validator
+            ->notEmptyString('current_password')
+            ->add('current_password', 'custom',
+                ['rule' => function ($value, $context) {
+                    $user = $this->get($context['data']['id']);
+                    if ($user) {
+                        if ((new DefaultPasswordHasher())->check($value, $user->password)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                    'message' => 'The old password does not match the current password!',
+                ])
+            ->notEmptyString('current_password');
+
+        $validator
+            ->add('new_password', [
+                'length' => [
+                    'rule' => ['minLength', 2],
+                    'message' => 'The password have to be at least 2 characters!',
+                ],
+                'match' => [
+                    'rule' => ['compareWith', 'confirm_password'],
+                    'message' => 'The passwords does not match!',
+                ],
+            ])
+            ->notEmptyString('password');
+
+        return $validator;
     }
 }

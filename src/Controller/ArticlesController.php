@@ -96,8 +96,8 @@ class ArticlesController extends AppController
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('The article has been saved.'));
             }
-           // $this->response = $this->response->withStatus(400);
             $this->Flash->error(__('The article could not be saved. Please, try again.'));
+            return $this->redirect(['action' => 'index']);
         }
         $categories = $this->Articles->Categories->find('list', ['limit' => 200]);
         $this->set(compact('article', 'categories'));

@@ -90,6 +90,7 @@ class CategoriesController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $category = $this->Categories->patchEntity($category, $this->request->getData());
+
             if ($this->Categories->save($category)) {
                 $this->Flash->success(__('The category has been saved.'));
 

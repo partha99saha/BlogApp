@@ -37,17 +37,15 @@ echo $this->Html->css('bootstrap.min');
                     </div>
                     <div class="checkbox login-checkbox">
                         <label>
-                            <input type="checkbox" class="i-checks"> Remember me </label>
+                            <input type="checkbox" class="i-checks"> Remember me
+                        </label>
                     </div>
                         <button class = 'btn btn-success btn-block' type="submit">Login</button>
-
-                    <?= $this->Html->link("New User", ['action' => 'add']) ?>
-                    <?= $this->Form->end() ?>
+                        <?=  $this->flash->render();?>
+                        <?= $this->Html->link("New User", ['action' => 'add']) ?>
+                        <?= $this->Form->end() ?>
                 </div>
             </div>
-        </div>
-        <div class="text-center login-footer">
-            <p>Copyright © 2021. All rights reserved. Template by <a href="https://agpaytech.co.uk">AgpayTech</a></p>
         </div>
     </div>
 </div>

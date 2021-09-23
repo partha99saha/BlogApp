@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var \App\Model\Entity\User $User
+ */
 $cakeDescription = 'CakePHP || BLOG ';
 ?>
 
@@ -15,11 +18,20 @@ $cakeDescription = 'CakePHP || BLOG ';
     <?= $this->Html->meta('icon') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
+    <link  href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 
 
     <?= $this->Html->css([
+        'all.min.css',
+        'tempusdominus-bootstrap-4.min.css',
+        'icheck-bootstrap.min.css',
+        'jqvmap.min.css',
+        'adminlte.min.css',
+        'OverlayScrollbars.min.css',
+        'daterangepicker.css',
+        'summernote-bs4.min.css',
+
         'bootstrap.min.css',
         'style.css',
         'font-awesome.min.css',
@@ -77,7 +89,7 @@ $cakeDescription = 'CakePHP || BLOG ';
                 </li>
 
                 <li>
-                    <?= $this->Html->link("User Details", ['controller' => 'Users','action' => 'index'],['class'=>"mini-click-non"]) ?>
+                    <?= $this->Html->link("User Details", ['controller' => 'Users','action' => 'view',$User->id],['class'=>"mini-click-non"]) ?>
                 </li>
                 <li>
                     <?= $this->Html->link("Logout", ['controller' => 'Users','action' => 'logout'],['class'=>"mini-click-non"]) ?>

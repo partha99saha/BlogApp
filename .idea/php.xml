@@ -94,6 +94,7 @@
       <path value="$PROJECT_DIR$/vendor/vierge-noire/cakephp-test-migrator" />
       <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
       <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/vendor/friendsofcake/cakephp-csvview" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2d85fff43e6ed51642aebf4ba945ecd8646a6129',
+        'reference' => 'e8e9b6f7e7737e2f9366259b4c48f53fb861f7a6',
         'name' => 'cakephp/app',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2d85fff43e6ed51642aebf4ba945ecd8646a6129',
+            'reference' => 'e8e9b6f7e7737e2f9366259b4c48f53fb861f7a6',
             'dev_requirement' => false,
         ),
         'cakephp/authentication' => array(
@@ -279,6 +279,15 @@
             'aliases' => array(),
             'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
             'dev_requirement' => true,
+        ),
+        'friendsofcake/cakephp-csvview' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'type' => 'cakephp-plugin',
+            'install_path' => __DIR__ . '/../friendsofcake/cakephp-csvview',
+            'aliases' => array(),
+            'reference' => 'a46b677860ff467e2e435de8bf17af8af1bffdc5',
+            'dev_requirement' => false,
         ),
         'jasny/twig-extensions' => array(
             'pretty_version' => 'v1.3.0',

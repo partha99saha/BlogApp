@@ -17,6 +17,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\EventInterface;
 use Cake\Http\Response;
 
 /**
@@ -54,6 +55,13 @@ class AppController extends Controller
          */
         //$this->loadComponent('FormProtection');
     }
+    public function beforeRender(EventInterface $event)
+    {
+        parent::beforeRender($event);
+        $User = $this->request->getAttribute('identity');
+        $this->set(compact('User'));
+    }
+
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         parent::beforeFilter($event);

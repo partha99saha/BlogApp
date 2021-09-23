@@ -6,7 +6,6 @@
  *  @var \App\Model\Entity\User[]|\Cake\Collection\CollectionInterface $user1
  * @var \App\Model\Entity\User[]
  */
-//dd($Users);
 ?>
 
 <div class="breadcome-area">
@@ -43,7 +42,8 @@
                                     </td>
                                     <td><?= $user->created->format(DATE_RFC850) ?></td>
                                     <td>
-                                    <?php if($user1->role_id == "2d3dbae4-27ac-4227-aeba-42f1abd787c8"){ ?>
+
+                                        <?= $this->Html->link("View Profile", ['controller' => 'Users','action' => 'view',$user->id]) ?>
                                         <?= $this->Form->postLink(
                                             'Delete',
                                             ['action' => 'delete', $user->id],
@@ -51,7 +51,6 @@
                                         ?>
                                         </td>
                                         </tr>
-                                    <?php }?>
                                     <?php }?>
                             </table>
                         </div>

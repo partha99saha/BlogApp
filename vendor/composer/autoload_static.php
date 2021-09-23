@@ -126,6 +126,7 @@ class ComposerStaticInit5c785e17589e2e4b69cdf9fd039b4e1f
         ),
         'C' => 
         array (
+            'CsvView\\' => 8,
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Spdx\\' => 14,
             'Composer\\Semver\\' => 16,
@@ -347,6 +348,10 @@ class ComposerStaticInit5c785e17589e2e4b69cdf9fd039b4e1f
         'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
+        ),
+        'CsvView\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofcake/cakephp-csvview/src',
         ),
         'Composer\\XdebugHandler\\' => 
         array (

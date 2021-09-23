@@ -99,11 +99,13 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vierge-noire/cakephp-test-migrator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/debug_kit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofcake/cakephp-csvview" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="bootstrap.bundle" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="ionicons" level="application" />
   </component>
 </module>
